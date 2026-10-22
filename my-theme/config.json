@@ -1,0 +1,12 @@
+{
+  "background_color": "#140607",
+  "wallpaper": true,
+  "greeting_name": "Mohith Reddy K",
+  "columns": 5,
+  "rows_below_dock": 1,
+  "dock_title": false,
+  "hidden_apps": [
+    "com.tcl.tv",
+    "com.tcl.notereminder"
+  ]
+}

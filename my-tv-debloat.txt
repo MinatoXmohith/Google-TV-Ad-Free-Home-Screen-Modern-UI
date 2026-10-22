@@ -1,0 +1,15 @@
+# TCL BeyondTV (India), Android TV 9, build PPR1.180610.011. Based on examples/tcl-beyondtv.
+# Kept ON by choice: Play Movies (com.google.android.videos), Play Games, YouTube Music.
+# Apply:  cd ~/Desktop/TV-Demo && TV_HOST=192.168.1.36 cleanyourtv/tools/disable.sh my-tv-debloat.txt
+# Undo:   cd ~/Desktop/TV-Demo && TV_HOST=192.168.1.36 cleanyourtv/tools/restore.sh my-tv-debloat.txt
+com.tcl.bi                              # analytics / telemetry service
+com.tcl.tv.tclhome_passive              # pushes TCL content to the home screen at boot
+com.tcl.waterfall.overseas              # TCL web content feed
+com.tcl.esticker                        # retail demo stickers
+com.tcl.tvweishi                        # "cleaner" widget service
+com.tcl.notereminder
+com.tcl.appmarket2                      # TCL app store (Google Play Store stays)
+com.google.android.tvrecommendations
+com.google.android.leanbacklauncher.recommendations
+com.tcl.partnercustomizer               # TCL Channel tile, T-key shortcut, stock-launcher partner content
+com.tcl.MultiScreenInteraction_TV      # MagiConnect (TCL phone-to-TV remote/casting app)
