@@ -11,7 +11,7 @@ TCL BeyondTV (India), Android TV 9, IP 192.168.1.36. It was cleaned up with
 | `backup-20261020-1723/` | Snapshot of the TV before any change: packages, settings, properties |
 | `wallpaper-*.jpg`, `spiderman-original.jpg`, `mkdziner-logo.webp` | Wallpaper sources and versions |
 | `*.png` | Screenshots taken from the TV during the setup |
-| `cleanyourtv/` | The launcher and tools. This is a separate git repository, not tracked here. Your changes are on branch `my-tv-setup` |
+| `cleanyourtv/` | The launcher and tools: a separate repository. The code for this setup is on [MinatoXmohith/cleanyourtv, branch `my-tv-setup`](https://github.com/MinatoXmohith/cleanyourtv/tree/my-tv-setup) |
 
 Push the theme again after editing it:
 
