@@ -1,4 +1,4 @@
-# TV-Demo: my TCL BeyondTV setup
+# Google TV — Ad-Free Home Screen & Modern UI
 
 TCL BeyondTV (India), Android TV 9, IP 192.168.1.36. It was cleaned up with
 [CleanYourTV](https://github.com/Gathin23/cleanyourtv) and given a tvOS-style home screen.
