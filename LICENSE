@@ -19,17 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----------------------------------------------------------------------------
-
-Not covered by the MIT licence above:
-
-- The mkdziner logo, the Domain Clash poster artwork and the profile photo
-  (my-theme/avatar.jpg). Copyright (c) 2026 Mohith Reddy K (mkdziner),
-  all rights reserved.
-- The Spider-Man collage wallpaper and any third-party characters, app logos
-  and trademarks visible in the screenshots. These belong to their respective
-  owners and are shown here only to document the setup.
-
-The launcher and tools this setup builds on are CleanYourTV
-(https://github.com/Gathin23/cleanyourtv), MIT licensed by its authors.

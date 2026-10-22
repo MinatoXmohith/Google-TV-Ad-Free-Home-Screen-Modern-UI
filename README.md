@@ -147,4 +147,4 @@ animation speed and the theme.
 ## Licence
 
 Scripts, configuration and documentation: [MIT](LICENSE). Wallpapers, the mkdziner logo, the Domain
-Clash poster and the profile photo are **not** covered by the MIT licence. See [LICENSE](LICENSE) for details.
+Clash poster and the profile photo are **not** covered by the MIT licence. See [NOTICE.md](NOTICE.md).

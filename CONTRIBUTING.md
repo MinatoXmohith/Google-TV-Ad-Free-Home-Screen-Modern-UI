@@ -21,4 +21,4 @@ Thanks for wanting to help. This repo documents one TV setup, so the most useful
 ## Pull requests
 
 Keep them small and say which TV you tested on. By contributing you agree your contribution is
-released under the [MIT licence](LICENSE). Artwork and photos are excluded, as the licence explains.
+released under the [MIT licence](LICENSE). Artwork and photos are excluded, see [NOTICE.md](NOTICE.md).
