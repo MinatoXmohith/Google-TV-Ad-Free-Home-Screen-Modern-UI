@@ -8,5 +8,6 @@
   "hidden_apps": [
     "com.tcl.tv",
     "com.tcl.notereminder"
-  ]
+  ],
+  "weather_city": "Nellore"
 }
