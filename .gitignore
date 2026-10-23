@@ -1,3 +1,14 @@
 # The launcher code is its own git repository (branch my-tv-setup inside cleanyourtv/).
 cleanyourtv/
 .DS_Store
+
+# Secret: TMDB key for the dashboard browse screen. Never commit it.
+my-theme/tmdb_key.txt
+**/tmdb_key.txt
+.tools-venv/
+
+# Big video outputs (rebuild with vox-video/scripts)
+vox-video/render/
+vox-video/*.aep
+vox-video/**/*.aep
+.DS_Store

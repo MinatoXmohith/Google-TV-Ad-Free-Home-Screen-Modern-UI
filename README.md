@@ -45,20 +45,30 @@ computer once on the TV, and everything else is standard Android tooling over Wi
 
 ## What you get
 
-- **A greeting with your name** in two bold lines, with the date underneath, in [Outfit](https://fonts.google.com/specimen/Outfit).
-- **A status pill** at the top right with the time and your profile photo, like Apple TV's profile button.
-- **A control panel.** Select the pill and it opens in place into a glass panel with **Inputs** (HDMI, AV, Live TV), **Wi-Fi** (with the network name) and **Settings**.
-- **Liquid glass.** The pill, the dock and every menu show the wallpaper blurred behind them, with a top sheen and a bright rim. Android 9 has no live blur, so the blur is made once from the wallpaper. It costs about 130 KB of memory.
-- **A dock of five apps** in a glass band in the middle of the screen, with the rest of the apps in a grid below.
-- **Your own wallpaper and logo** from the theme: no ads, no "Discover" rows, no sponsored tiles.
-- **Faster everyday use.** Animations run at 0.5× and the main apps are pre-compiled, so they open faster.
+**A dashboard home screen** (designed in Figma, tvOS 2026 inspired), all in clear liquid glass:
+
+- **"HELLO! MOHITH REDDY K"** and a status pill with the time and my photo. The pill opens Inputs, Wi-Fi, Settings and launcher settings.
+- **A glass rail** with Home, Search (Google search on the TV) and Settings.
+- **A music card** showing whatever is playing, with album art and ◀ ⏸ ▶. The remote's media keys work too.
+- **A date and weather card** (Open-Meteo, free, no account; set `weather_city` in the theme).
+- **An apps panel** with seven favourites and **All apps**, which opens the full grid.
+- **Featured / Movies / Shows:** three genre stacks of this week's trending posters from [TMDB](https://www.themoviedb.org), plus a glass music bar. OK searches the title on the TV.
+- **Clear liquid glass:** the wallpaper lightly blurred behind every card, a lens band that bends the edges and a bright specular rim. Android 9 has no live blur, so it's computed once from the wallpaper.
+- **Faster everyday use:** animations at 0.5× and the main apps pre-compiled.
+
+| | |
+|---|---|
+| ![Dashboard home](docs/screenshots/dashboard.jpg) | ![Trending posters by genre](docs/screenshots/browse.jpg) |
+| *Dashboard: rail, music, date and weather, apps, Featured / Movies / Shows* | *Featured: trending posters by genre from TMDB* |
+
+**Setting it up:** the TMDB key goes in `my-theme/tmdb_key.txt`. It's git-ignored, so it never lands in the repo. Get a free one at themoviedb.org → Settings → API. `build-and-install.sh` grants music access automatically.
 
 ## Screenshots
 
 | | |
 |---|---|
-| ![Home: greeting, status pill, glass dock](docs/screenshots/home.jpg) | ![The status pill opened into the glass control panel](docs/screenshots/control-panel.jpg) |
-| *Home: greeting, status pill, glass dock, 5 apps per row* | *The pill opens into Inputs / Wi-Fi / Settings* |
+| ![Previous home: greeting, status pill, glass dock](docs/screenshots/home.jpg) | ![The status pill opened into the glass control panel](docs/screenshots/control-panel.jpg) |
+| *Previous version: greeting, status pill, glass dock* | *The pill opens into Inputs / Wi-Fi / Settings* |
 | ![Status pill close-up with time and avatar](docs/screenshots/status-pill.jpg) | ![The stock Google TV home with sponsored rows](docs/screenshots/before-stock-google-tv.jpg) |
 | *Status pill: time and profile photo on glass* | *Before: sponsored rows on the stock Google TV home* |
 | ![First liquid glass version with three pills](docs/screenshots/liquid-glass-v1.jpg) | ![Domain Clash poster theme](docs/screenshots/theme-domain-clash.jpg) |
