@@ -47,3 +47,10 @@ On the new home screen, hold OK on **Settings** → Launcher settings → change
 - Layout settings are in `my-theme/config.json`: 5 columns, 1 row under the dock, no app title, Reminder and TCL TV tiles hidden.
 - Profile photo: put a square photo at `my-theme/avatar.jpg`, push the theme, and the "MK" initials are replaced.
 - The Reminder app (com.tcl.notereminder) is switched back on by TCL's own startup code after a restart. Its tile stays hidden anyway.
+
+## Dashboard (23 October 2026)
+- Home is now `com.gathin.tvhome/.DashboardActivity`. The old grid is still there as **All apps** (`MainActivity`).
+- The launcher now uses the internet, only for weather (Open-Meteo) and posters (TMDB).
+- Music access: the installer runs `cmd notification allow_listener com.gathin.tvhome/com.gathin.tvhome.MediaListener`.
+  To revoke it, run `cmd notification disallow_listener com.gathin.tvhome/com.gathin.tvhome.MediaListener`.
+- To go back to the v3 home screen: `cd cleanyourtv && git checkout d87bfc2 -- launcher && cd launcher && TV_HOST=192.168.1.36 ./build-and-install.sh`.

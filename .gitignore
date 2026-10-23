@@ -12,3 +12,9 @@ vox-video/render/
 vox-video/*.aep
 vox-video/**/*.aep
 .DS_Store
+
+# Kept on this Mac only
+vox-video/
+docs/screenshots/original/
+wallpapers/spiderman-original.jpg
+wallpapers/wallpaper-spiderman-*.jpg
