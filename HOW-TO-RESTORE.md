@@ -53,4 +53,4 @@ On the new home screen, hold OK on **Settings** → Launcher settings → change
 - The launcher now uses the internet, only for weather (Open-Meteo) and posters (TMDB).
 - Music access: the installer runs `cmd notification allow_listener com.gathin.tvhome/com.gathin.tvhome.MediaListener`.
   To revoke it, run `cmd notification disallow_listener com.gathin.tvhome/com.gathin.tvhome.MediaListener`.
-- To go back to the v3 home screen: `cd cleanyourtv && git checkout d87bfc2 -- launcher && cd launcher && TV_HOST=<TV-IP> ./build-and-install.sh`.
+- To go back to the v3 home screen: `cd cleanyourtv && git checkout 9df11ed -- launcher && cd launcher && TV_HOST=<TV-IP> ./build-and-install.sh`.
