@@ -6,6 +6,8 @@
 - Five favourite apps; the APPS tab opens the full grid.
 - Trending page sits below the home screen: Down slides it up, Up slides it back.
 - mkdziner logo moved to the bottom right.
+- Animations: APPS grows in from its tab and shrinks back on Home or Back, home settles in piece by piece,
+  menus drop in from the time pill, and the trending page slides up already filled (prefetched and cached).
 
 ## v4: Dashboard (23 October 2026)
 - New dashboard home from the Figma design: greeting, time + photo pill, glass rail, now-playing card,
