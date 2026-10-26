@@ -18,3 +18,7 @@ vox-video/
 docs/screenshots/original/
 wallpapers/spiderman-original.jpg
 wallpapers/wallpaper-spiderman-*.jpg
+
+# Private: TV identifiers (serial, Android ID) and draft posts stay on this Mac
+backup-*/
+posts/

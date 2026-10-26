@@ -33,6 +33,10 @@ My TCL Google TV showed a sponsored ad before I could even open Netflix. This pr
 ads and telemetry over Wi-Fi and replaces the home screen with a dashboard I designed in Figma,
 inspired by Apple's tvOS 2026 and built as a native Android TV launcher.
 
+> **Built on [CleanYourTV](https://github.com/Gathin23/cleanyourtv) by Gathin ([@gathint](https://x.com/gathint) · [GitHub](https://github.com/Gathin23)).**
+> The debloat tools, restore system and original launcher are his open-source work (MIT); this project adds the
+> dashboard, liquid glass UI, weather, music and trending screens on top.
+
 ## Features
 
 | | |
@@ -68,7 +72,7 @@ Each version started as Figma frames ([v5 home](docs/design/figma-home-v5.jpg) �
 Android TVs have the same debug bridge (ADB) as Android phones. Enable USB debugging, allow the
 computer once on the TV, and everything else runs over Wi-Fi:
 
-1. **Back up:** packages, settings and system properties are saved before any change ([`backup-20261020-1723/`](backup-20261020-1723)).
+1. **Back up:** packages, settings and system properties are saved before any change (kept locally, not published: it contains the TV's serial number).
 2. **Debloat:** the apps in [`my-tv-debloat.txt`](my-tv-debloat.txt) are disabled for the user, never uninstalled.
 3. **Install the launcher:** a small native Java app (~400 KB, AndroidX RecyclerView only) becomes the default Home.
 4. **Apply the theme:** wallpaper, layout, name, photo and city come from [`my-theme/`](my-theme) and can be changed without a rebuild.
@@ -95,7 +99,7 @@ git clone -b my-tv-setup https://github.com/MinatoXmohith/cleanyourtv
 git clone https://github.com/MinatoXmohith/Google-TV-Ad-Free-Home-Screen-Modern-UI tv-setup
 cd cleanyourtv
 python3 -m venv tools/venv && tools/venv/bin/pip install -r tools/requirements.txt
-export TV_HOST=192.168.1.36                      # your TV's IP
+export TV_HOST=192.168.1.50                      # your TV's IP
 
 tools/venv/bin/python -I tools/tv.py --probe    # accept "Allow USB debugging?" on the TV
 tools/disable.sh ../tv-setup/my-tv-debloat.txt  # backup, then disable bloat
@@ -116,7 +120,7 @@ Everything lives in [`my-theme/`](my-theme). Edit it, then push it again with `t
 | File / key | Purpose |
 |---|---|
 | `config.json` → `greeting_name` | Name in the greeting and the avatar initials |
-| `config.json` → `weather_city` | City for the weather card, e.g. `"Nellore"` |
+| `config.json` → `weather_city` | City for the weather card, e.g. `"Mumbai"` |
 | `config.json` → `dock_apps` / `hidden_apps` | Order of favourite apps, and apps to hide |
 | `config.json` → `music_app` | App opened by ▶ when nothing is playing (optional) |
 | `wallpaper.jpg` | 1920×1080 background; the glass is computed from it |
@@ -126,7 +130,7 @@ Everything lives in [`my-theme/`](my-theme). Edit it, then push it again with `t
 ## Restoring the TV
 
 ```bash
-TV_HOST=192.168.1.36 tools/restore.sh ../tv-setup/my-tv-debloat.txt
+TV_HOST=<TV-IP> tools/restore.sh ../tv-setup/my-tv-debloat.txt
 ```
 
 This re-enables every app and the original Google TV home. Without a computer, use the TV's
@@ -148,7 +152,6 @@ This TV has no AirPlay receiver, so to show a Mac on it, use Chrome → **Cast �
 ```
 ├── my-theme/            theme pushed to the TV (config, wallpaper, avatar)
 ├── my-tv-debloat.txt    apps switched off
-├── backup-20261020-1723/  snapshot of the TV before any change
 ├── wallpapers/          wallpaper sources and the mkdziner logo
 ├── docs/                README images, Figma frames, design journey
 ├── HOW-TO-RESTORE.md    every change and how to undo it

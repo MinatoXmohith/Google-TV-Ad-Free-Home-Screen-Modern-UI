@@ -1,2 +1,0 @@
-priority=2 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
-com.google.android.tvlauncher/.MainActivity

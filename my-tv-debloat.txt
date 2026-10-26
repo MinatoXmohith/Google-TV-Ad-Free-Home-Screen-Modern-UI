@@ -1,7 +1,7 @@
 # TCL BeyondTV (India), Android TV 9, build PPR1.180610.011. Based on examples/tcl-beyondtv.
 # Kept ON by choice: Play Movies (com.google.android.videos), Play Games, YouTube Music.
-# Apply:  cd ~/Desktop/TV-Demo && TV_HOST=192.168.1.36 cleanyourtv/tools/disable.sh my-tv-debloat.txt
-# Undo:   cd ~/Desktop/TV-Demo && TV_HOST=192.168.1.36 cleanyourtv/tools/restore.sh my-tv-debloat.txt
+# Apply:  cd ~/Desktop/TV-Demo && TV_HOST=<TV-IP> cleanyourtv/tools/disable.sh my-tv-debloat.txt
+# Undo:   cd ~/Desktop/TV-Demo && TV_HOST=<TV-IP> cleanyourtv/tools/restore.sh my-tv-debloat.txt
 com.tcl.bi                              # analytics / telemetry service
 com.tcl.tv.tclhome_passive              # pushes TCL content to the home screen at boot
 com.tcl.waterfall.overseas              # TCL web content feed

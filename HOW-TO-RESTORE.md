@@ -1,6 +1,6 @@
 # TCL BeyondTV: what was changed and how to undo it
 
-TV: TCL BeyondTV, Android TV 9, build PPR1.180610.011, IP 192.168.1.36 (changed 20 October 2026).
+TV: TCL BeyondTV, Android TV 9, build PPR1.180610.011, IP <TV-IP> (changed 20 October 2026).
 No firmware was flashed, nothing was rooted, and nothing was uninstalled.
 
 ## What was changed
@@ -15,7 +15,7 @@ The full "before" snapshot is in `backup-20261020-1723/`. The undo record is in 
 Turn **USB debugging** back on in the TV's Developer options. Then run this in Terminal:
 
 ```bash
-cd ~/Desktop/TV-Demo && TV_HOST=192.168.1.36 cleanyourtv/tools/restore.sh my-tv-debloat.txt
+cd ~/Desktop/TV-Demo && TV_HOST=<TV-IP> cleanyourtv/tools/restore.sh my-tv-debloat.txt
 ```
 
 This turns the 9 apps and the old Google home screen back on, and makes the old one your Home again.
@@ -30,14 +30,14 @@ On the new home screen, hold OK on **Settings** → Launcher settings → change
 
 ## Speed tweaks (20 October 2026, 19:30)
 - Animations were set to 0.5x (they were 1.0). To undo, turn on USB debugging and run:
-  `cd ~/Desktop/TV-Demo/cleanyourtv && TV_HOST=192.168.1.36 tools/venv/bin/python -I tools/tv.py 'settings put global window_animation_scale 1.0; settings put global transition_animation_scale 1.0; settings put global animator_duration_scale 1.0'`
+  `cd ~/Desktop/TV-Demo/cleanyourtv && TV_HOST=<TV-IP> tools/venv/bin/python -I tools/tv.py 'settings put global window_animation_scale 1.0; settings put global transition_animation_scale 1.0; settings put global animator_duration_scale 1.0'`
   Or go to TV Settings → Developer options → Window / Transition / Animator animation scale and set each one to 1x.
 - The main apps were pre-compiled ("speed" mode). This uses about 300 MB of storage and needs no undo. App updates replace it.
 
 ## Liquid glass + greeting name (21 October 2026)
 - The launcher code was changed: `LiquidGlass.java` is new, and `DockDecoration.java` and `MainActivity.java` were edited.
   To go back to the original look: `cd ~/Desktop/TV-Demo/cleanyourtv && git checkout launcher/app/src/main/java && rm launcher/app/src/main/java/com/gathin/tvhome/LiquidGlass.java`,
-  then reinstall with `cd launcher && TV_HOST=192.168.1.36 ./build-and-install.sh` (your dock order in config.xml is kept).
+  then reinstall with `cd launcher && TV_HOST=<TV-IP> ./build-and-install.sh` (your dock order in config.xml is kept).
 - The greeting name is `"greeting_name"` in `my-theme/config.json`. Edit it there and push it with `cleanyourtv/tools/theme.sh ~/Desktop/TV-Demo/my-theme`.
 
 ## tvOS-style layout (22 October 2026)
@@ -53,4 +53,4 @@ On the new home screen, hold OK on **Settings** → Launcher settings → change
 - The launcher now uses the internet, only for weather (Open-Meteo) and posters (TMDB).
 - Music access: the installer runs `cmd notification allow_listener com.gathin.tvhome/com.gathin.tvhome.MediaListener`.
   To revoke it, run `cmd notification disallow_listener com.gathin.tvhome/com.gathin.tvhome.MediaListener`.
-- To go back to the v3 home screen: `cd cleanyourtv && git checkout d87bfc2 -- launcher && cd launcher && TV_HOST=192.168.1.36 ./build-and-install.sh`.
+- To go back to the v3 home screen: `cd cleanyourtv && git checkout d87bfc2 -- launcher && cd launcher && TV_HOST=<TV-IP> ./build-and-install.sh`.
