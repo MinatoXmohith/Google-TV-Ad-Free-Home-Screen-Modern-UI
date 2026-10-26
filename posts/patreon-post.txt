@@ -1,0 +1,38 @@
+I Took My TV Back: Ad-Free Google TV + a Liquid Glass Dashboard I Designed
+
+My TCL Google TV showed a sponsored ad before I could even open Netflix. So I turned it into a design project: clean up the system, then build a home screen I'd actually want to look at.
+
+WHAT I DID
+
+1. Connected to the TV over Wi-Fi using Android's debug bridge. No root, nothing flashed.
+2. Backed up every app and setting first.
+3. Switched off 11 junk apps: telemetry, ad feeds and promo apps. Disabled, not deleted, so one command undoes everything.
+4. Designed a new home screen in Figma, inspired by Apple's tvOS 2026, and built it as a native Android TV app.
+
+THE NEW DASHBOARD
+
+• A greeting with my name, and a time + profile-photo pill that opens Inputs, Wi-Fi and Settings
+• Liquid glass cards: light blur, edge refraction and a bright rim, made to work on a 2021 TV chip with no live blur
+• Now playing: shows whatever is on Spotify or YouTube Music, with album art and controls
+• Live weather for Nellore
+• My favourite apps, plus All apps
+• Featured / Movies / Shows: this week's trending posters, grouped by genre
+
+Above: the stock Google TV with its sponsored rows, next to the new dashboard. It went through four versions on the real TV to get here.
+
+BEHIND THE SCENES
+
+I also made a Vox-style collage explainer of the whole process in After Effects and Premiere Pro.
+
+FREE & OPEN SOURCE
+
+Everything (setup, theme, launcher code and restore guide) is on GitHub:
+https://github.com/MinatoXmohith/Google-TV-Ad-Free-Home-Screen-Modern-UI
+
+Want me to do this for your TV, or make a step-by-step video tutorial? Tell me in the comments 👇
+
+Your support helps me keep building and sharing projects like this. Thank you! 🙏
+
+— mkdziner
+
+TAGS: Google TV, Android TV, UI Design, Liquid Glass, tvOS, Figma, Smart TV, Ad-Free, Open Source, Debloat, Home Screen, mkdziner

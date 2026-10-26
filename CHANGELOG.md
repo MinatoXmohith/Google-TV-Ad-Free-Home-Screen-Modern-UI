@@ -1,5 +1,12 @@
 # Changelog
 
+## v5: Home + weather (26 October 2026)
+- New home from the Figma structure: greeting + date, HOME · APPS tabs, time + photo pill.
+- Large now-playing card and a weather card with a details panel (feels like, UV index, wind, cloud cover, day / night).
+- Five favourite apps; the APPS tab opens the full grid.
+- Trending page sits below the home screen: Down slides it up, Up slides it back.
+- mkdziner logo moved to the bottom right.
+
 ## v4: Dashboard (23 October 2026)
 - New dashboard home from the Figma design: greeting, time + photo pill, glass rail, now-playing card,
   date & weather card, apps panel, Featured / Movies / Shows.

@@ -39,11 +39,11 @@ inspired by Apple's tvOS 2026 and built as a native Android TV launcher.
 |---|---|
 | 🧹 **Debloat over Wi-Fi** | 11 telemetry, ad and promo apps switched off with `pm disable-user`. Nothing uninstalled, everything reversible. |
 | 🪟 **Liquid glass UI** | Clear glass cards with a light blur, edge refraction and a specular rim. Android 9 has no live blur, so it's computed once from the wallpaper. |
-| 👋 **Personal header** | Greeting with your name, plus a status pill with the time and your photo. The pill opens Inputs, Wi-Fi and Settings. |
+| 👋 **Personal header** | Greeting with your name and the date, **HOME · APPS** tabs, and a status pill with the time and your photo that opens Inputs, Wi-Fi and Settings. |
 | 🎵 **Now playing** | Shows whatever is playing (Spotify, YouTube Music…) with album art and controls. Remote media keys work too. |
-| 🌤 **Date & weather** | Live weather for your city from [Open-Meteo](https://open-meteo.com): free, no account. |
-| 📱 **Apps panel** | Seven favourites plus **All apps** for the full grid. |
-| 🎬 **Featured · Movies · Shows** | This week's trending titles from [TMDB](https://www.themoviedb.org), grouped into genre stacks. Select one to search it on the TV. |
+| 🌤 **Weather** | Live from [Open-Meteo](https://open-meteo.com) (free, no account): temperature, condition, day / night, feels like, UV index, wind and cloud cover. |
+| 📱 **Favourite apps** | Five favourite apps on the home screen; the **APPS** tab opens the full grid. |
+| 🎬 **Trending this week** | Press **Down** on the home screen and a page slides up with this week's trending titles from [TMDB](https://www.themoviedb.org), grouped into genre stacks. Select one to search it on the TV. |
 | ⚡ **Faster TV** | Animations at 0.5× and the main apps pre-compiled. |
 | ↩️ **Fully reversible** | A backup comes first, and one command restores the stock TV. |
 
@@ -51,17 +51,17 @@ inspired by Apple's tvOS 2026 and built as a native Android TV launcher.
 
 | | |
 |---|---|
-| ![Dashboard home](docs/screenshots/home.jpg) | ![Control panel](docs/screenshots/control-panel.jpg) |
-| **Dashboard:** rail, now playing, date & weather, apps | **Control panel:** the status pill opens Inputs, Wi-Fi and Settings |
-| ![Shows](docs/screenshots/shows.jpg) | ![Movies](docs/screenshots/movies.jpg) |
-| **Shows:** trending by genre, with a glass music bar | **Movies:** posters from TMDB, refreshed weekly |
+| ![Home](docs/screenshots/home.jpg) | ![Trending this week](docs/screenshots/trending.jpg) |
+| **Home:** greeting, HOME · APPS tabs, now playing, weather with details, five favourite apps | **Trending (press Down):** this week's titles by genre from TMDB, plus a glass music bar |
+| ![Control panel](docs/screenshots/control-panel.jpg) | ![Stock Google TV](docs/screenshots/stock-google-tv.jpg) |
+| **Control panel:** the status pill opens Inputs, Wi-Fi and Settings *(previous version)* | **Before:** the stock Google TV with sponsored rows |
 
 ### Design journey
 
 ![v1 clean launcher, v2 custom wallpaper, v3 liquid glass, v4 dashboard](docs/design/evolution.jpg)
 
-The final layout started as Figma frames ([dashboard](docs/design/figma-dashboard.jpg) ·
-[first layout](docs/design/figma-first-layout.jpg)) and was refined on the real TV through four versions.
+Each version started as Figma frames ([v5 home](docs/design/figma-home-v5.jpg) · [v4 dashboard](docs/design/figma-dashboard.jpg) ·
+[first layout](docs/design/figma-first-layout.jpg)) and was refined on the real TV.
 
 ## How it works
 
