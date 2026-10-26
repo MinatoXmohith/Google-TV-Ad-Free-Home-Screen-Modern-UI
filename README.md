@@ -53,8 +53,8 @@ inspired by Apple's tvOS 2026 and built as a native Android TV launcher.
 |---|---|
 | ![Home](docs/screenshots/home.jpg) | ![Trending this week](docs/screenshots/trending.jpg) |
 | **Home:** greeting, HOME · APPS tabs, now playing, weather with details, five favourite apps | **Trending (press Down):** this week's titles by genre from TMDB, plus a glass music bar |
-| ![Control panel](docs/screenshots/control-panel.jpg) | ![Stock Google TV](docs/screenshots/stock-google-tv.jpg) |
-| **Control panel:** the status pill opens Inputs, Wi-Fi and Settings *(previous version)* | **Before:** the stock Google TV with sponsored rows |
+| ![Control panel](docs/screenshots/control-panel.jpg) | ![All apps](docs/screenshots/all-apps.jpg) |
+| **Control panel:** the time pill opens Inputs, Wi-Fi, Settings and launcher settings | **All apps:** the APPS tab; it grows in from the tab and shrinks back on Home |
 
 ### Design journey
 
