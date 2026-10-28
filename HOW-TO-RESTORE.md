@@ -48,6 +48,11 @@ On the new home screen, hold OK on **Settings** → Launcher settings → change
 - Profile photo: put a square photo at `my-theme/avatar.jpg`, push the theme, and the "MK" initials are replaced.
 - The Reminder app (com.tcl.notereminder) is switched back on by TCL's own startup code after a restart. Its tile stays hidden anyway.
 
+## Wallpapers by mood (28 October 2026)
+- Launcher settings → Wallpapers. "My theme wallpaper" goes back to the theme's `wallpaper.jpg`.
+- Your wallpapers live on the TV in `/sdcard/Android/data/com.gathin.tvhome/files/wallpapers/`. To remove them,
+  run `TV_HOST=<TV-IP> cleanyourtv/tools/wallpapers.sh --reset`.
+
 ## Dashboard (23 October 2026)
 - Home is now `com.gathin.tvhome/.DashboardActivity`. The old grid is still there as **All apps** (`MainActivity`).
 - The launcher now uses the internet, only for weather (Open-Meteo) and posters (TMDB).

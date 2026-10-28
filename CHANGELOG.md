@@ -1,5 +1,15 @@
 # Changelog
 
+## v6: Wallpapers by mood and smoother motion (28 October 2026)
+- Launcher settings → Wallpapers: Static and Live sections, five each, every one tagged with a mood
+  (Calm, Fresh, Dreamy, Adventure, Moody · Nostalgic, Dreamy, Chill, Playful, Cozy).
+- Your own images and videos load from the theme folder via `wallpapers.json` (`tools/wallpapers.sh`); a built-in set of
+  five images and five animated scenes is the fallback.
+- Live wallpapers are muted 1080p loops; they stop and free the video decoder whenever an app is open.
+- The picked wallpaper previews full-screen behind the cards; an "In use" badge marks it.
+- Motion: shared curves, spring focus on tiles and posters, menus fade out, launcher durations independent of the 0.5×
+  system animation scale.
+
 ## v5: Home + weather (26 October 2026)
 - New home from the Figma structure: greeting + date, HOME · APPS tabs, time + photo pill.
 - Large now-playing card and a weather card with a details panel (feels like, UV index, wind, cloud cover, day / night).

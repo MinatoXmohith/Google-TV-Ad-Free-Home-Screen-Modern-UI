@@ -1,0 +1,16 @@
+{
+  "static": [
+    {"id": "dusk",   "file": "static/ahmet-yuksek-zSiqe6j9Aao.jpg",   "thumb": "static/ahmet-yuksek-zSiqe6j9Aao.thumb.jpg",   "mood": "Calm",      "name": "Dusk peaks"},
+    {"id": "palms",  "file": "static/dan-freeman-wAn4RfmXtxU.jpg",    "thumb": "static/dan-freeman-wAn4RfmXtxU.thumb.jpg",    "mood": "Fresh",     "name": "Palm mirror"},
+    {"id": "stars",  "file": "static/jonatan-pie-h8nxGssjQXs.jpg",    "thumb": "static/jonatan-pie-h8nxGssjQXs.thumb.jpg",    "mood": "Dreamy",    "name": "Under the stars"},
+    {"id": "valley", "file": "static/urban-vintage-78A265wPiO4.jpg",  "thumb": "static/urban-vintage-78A265wPiO4.thumb.jpg",  "mood": "Adventure", "name": "Golden valley"},
+    {"id": "storm",  "file": "static/yoal-desurmont-tryZNVLjUpc.jpg", "thumb": "static/yoal-desurmont-tryZNVLjUpc.thumb.jpg", "mood": "Moody",     "name": "Storm"}
+  ],
+  "live": [
+    {"id": "train",  "file": "live/anime-train-at-sunset.mp4",       "thumb": "live/anime-train-at-sunset.jpg",       "mood": "Nostalgic", "name": "Train at sunset"},
+    {"id": "castle", "file": "live/castle-beyond-the-clouds.mp4",    "thumb": "live/castle-beyond-the-clouds.jpg",    "mood": "Dreamy",    "name": "Castle in the clouds"},
+    {"id": "drive",  "file": "live/evening-drive-and-windmills.mp4", "thumb": "live/evening-drive-and-windmills.jpg", "mood": "Chill",     "name": "Evening drive"},
+    {"id": "cat",    "file": "live/floating-cat.mp4",                "thumb": "live/floating-cat.jpg",                "mood": "Playful",   "name": "Floating cat"},
+    {"id": "pixel",  "file": "live/sunset-deltarune.mp4",            "thumb": "live/sunset-deltarune.jpg",            "mood": "Cozy",      "name": "Pixel sunset"}
+  ]
+}

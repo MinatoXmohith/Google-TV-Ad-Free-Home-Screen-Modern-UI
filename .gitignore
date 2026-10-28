@@ -22,3 +22,10 @@ wallpapers/wallpaper-spiderman-*.jpg
 # Private: TV identifiers (serial, Android ID) and draft posts stay on this Mac
 backup-*/
 posts/
+
+# Wallpaper media: originals and TV copies stay local (large files; third-party art)
+wallpapers/static/
+wallpapers/LIVE WALLPAPER/
+wallpapers/tv/static/
+wallpapers/tv/live/
+wallpapers/moods/_sheet.jpg

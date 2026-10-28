@@ -48,7 +48,9 @@ inspired by Apple's tvOS 2026 and built as a native Android TV launcher.
 | 🌤 **Weather** | Live from [Open-Meteo](https://open-meteo.com) (free, no account): temperature, condition, day / night, feels like, UV index, wind and cloud cover. |
 | 📱 **Favourite apps** | Five favourite apps on the home screen; the **APPS** tab opens the full grid. |
 | 🎬 **Trending this week** | Press **Down** on the home screen and a page slides up with this week's trending titles from [TMDB](https://www.themoviedb.org), grouped into genre stacks. Select one to search it on the TV. |
-| ⚡ **Faster TV** | Animations at 0.5× and the main apps pre-compiled. |
+| 🖼 **Wallpapers by mood** | Launcher settings → Wallpapers: five **static** and five **live** (animated) wallpapers, each tagged with a mood. Live ones are muted video loops that stop the moment an app opens, so the app always gets the TV's video decoder. |
+| 🌊 **Smooth motion** | One set of motion curves everywhere, spring physics for focus, menus that fade out, and launcher animations that keep their designed speed even with the system at 0.5×. |
+| ⚡ **Faster TV** | System animations at 0.5× and the main apps pre-compiled. |
 | ↩️ **Fully reversible** | A backup comes first, and one command restores the stock TV. |
 
 ## Screenshots
@@ -59,6 +61,8 @@ inspired by Apple's tvOS 2026 and built as a native Android TV launcher.
 | **Home:** greeting, HOME · APPS tabs, now playing, weather with details, five favourite apps | **Trending (press Down):** this week's titles by genre from TMDB, plus a glass music bar |
 | ![Control panel](docs/screenshots/control-panel.jpg) | ![All apps](docs/screenshots/all-apps.jpg) |
 | **Control panel:** the time pill opens Inputs, Wi-Fi, Settings and launcher settings | **All apps:** the APPS tab; it grows in from the tab and shrinks back on Home |
+| ![Wallpapers by mood](docs/screenshots/wallpapers.jpg) | ![Home with a live wallpaper](docs/screenshots/home-live-wallpaper.jpg) |
+| **Wallpapers:** pick by mood, Static or Live; your pick previews behind the cards | **Live wallpaper on Home:** the video plays behind the glass, which shows the motion through it |
 
 ### Design journey
 
@@ -105,6 +109,7 @@ tools/venv/bin/python -I tools/tv.py --probe    # accept "Allow USB debugging?" 
 tools/disable.sh ../tv-setup/my-tv-debloat.txt  # backup, then disable bloat
 launcher/build-and-install.sh                   # build the launcher and set it as Home
 tools/theme.sh ../tv-setup/my-theme             # wallpaper, name, photo, weather, posters
+tools/wallpapers.sh ../tv-setup/wallpapers/tv   # optional: your own mood wallpapers (see below)
 ```
 
 > Package names differ by brand. On another model, start from the matching list in
@@ -126,6 +131,24 @@ Everything lives in [`my-theme/`](my-theme). Edit it, then push it again with `t
 | `wallpaper.jpg` | 1920×1080 background; the glass is computed from it |
 | `avatar.jpg` | Square photo for the status pill |
 | `tmdb_key.txt` | Your free [TMDB API key](https://www.themoviedb.org/settings/api). **Git-ignored, never commit it.** |
+
+### Mood wallpapers
+
+The Wallpapers screen shows the launcher's built-in set (five images and five animated scenes) until you push
+your own. Put five images and five videos in a folder with a
+[`wallpapers.json`](wallpapers/tv/wallpapers.json) that names each one's file, thumbnail, mood and title, then:
+
+```bash
+TV_HOST=<TV-IP> cleanyourtv/tools/wallpapers.sh wallpapers/tv     # --reset goes back to the built-in set
+```
+
+Make everything TV-sized first, since 4K files are wasted on a 1080p TV:
+
+```bash
+# image: 1920×1080 JPEG; video: 1080p H.264, muted, ≤4 Mbps; thumbnail: one frame at 480×270
+ffmpeg -i in.mp4 -an -vf "scale=1920:1080,fps=30,format=yuv420p" -c:v libx264 -profile:v main -crf 23 -maxrate 4M -bufsize 8M -movflags +faststart live/name.mp4
+ffmpeg -ss 3 -i live/name.mp4 -frames:v 1 -vf scale=480:270 live/name.jpg
+```
 
 ## Restoring the TV
 
@@ -152,7 +175,7 @@ This TV has no AirPlay receiver, so to show a Mac on it, use Chrome → **Cast �
 ```
 ├── my-theme/            theme pushed to the TV (config, wallpaper, avatar)
 ├── my-tv-debloat.txt    apps switched off
-├── wallpapers/          wallpaper sources and the mkdziner logo
+├── wallpapers/          wallpaper sources, the mkdziner logo, built-in mood art and wallpapers.json
 ├── docs/                README images, Figma frames, design journey
 ├── HOW-TO-RESTORE.md    every change and how to undo it
 └── CHANGELOG.md         version history
