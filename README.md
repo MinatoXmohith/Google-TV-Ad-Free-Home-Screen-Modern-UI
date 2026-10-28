@@ -99,9 +99,9 @@ options → turn on **USB debugging** (and **Network debugging** if present). No
 **2. On your computer:**
 
 ```bash
-git clone -b my-tv-setup https://github.com/MinatoXmohith/cleanyourtv
+git clone https://github.com/MinatoXmohith/lumen
 git clone https://github.com/MinatoXmohith/Google-TV-Ad-Free-Home-Screen-Modern-UI tv-setup
-cd cleanyourtv
+cd lumen
 python3 -m venv tools/venv && tools/venv/bin/pip install -r tools/requirements.txt
 export TV_HOST=192.168.1.50                      # your TV's IP
 
@@ -139,7 +139,7 @@ your own. Put five images and five videos in a folder with a
 [`wallpapers.json`](wallpapers/tv/wallpapers.json) that names each one's file, thumbnail, mood and title, then:
 
 ```bash
-TV_HOST=<TV-IP> cleanyourtv/tools/wallpapers.sh wallpapers/tv     # --reset goes back to the built-in set
+TV_HOST=<TV-IP> lumen/tools/wallpapers.sh wallpapers/tv     # --reset goes back to the built-in set
 ```
 
 Make everything TV-sized first, since 4K files are wasted on a 1080p TV:
@@ -181,7 +181,7 @@ This TV has no AirPlay receiver, so to show a Mac on it, use Chrome → **Cast �
 └── CHANGELOG.md         version history
 ```
 
-The launcher source is on the [`my-tv-setup` branch of the CleanYourTV fork](https://github.com/MinatoXmohith/cleanyourtv/tree/my-tv-setup).
+The launcher is now its own app, **[Lumen](https://github.com/MinatoXmohith/lumen)** (`com.mkdziner.tvhome`). Its history as a CleanYourTV fork stays on the [`my-tv-setup` branch](https://github.com/MinatoXmohith/cleanyourtv/tree/my-tv-setup).
 
 ## Credits
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## v7: Lumen (28 October 2026)
+- The launcher becomes its own app: **Lumen**, app ID `com.mkdziner.tvhome`, version 3.0, with its own icon and TV banner.
+- Its own repository, [MinatoXmohith/lumen](https://github.com/MinatoXmohith/lumen), MIT with Gathin credited.
+
 ## v6: Wallpapers by mood and smoother motion (28 October 2026)
 - Launcher settings → Wallpapers: Static and Live sections, five each, every one tagged with a mood
   (Calm, Fresh, Dreamy, Adventure, Moody · Nostalgic, Dreamy, Chill, Playful, Cozy).

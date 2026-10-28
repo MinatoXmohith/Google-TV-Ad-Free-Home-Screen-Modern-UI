@@ -48,6 +48,14 @@ On the new home screen, hold OK on **Settings** → Launcher settings → change
 - Profile photo: put a square photo at `my-theme/avatar.jpg`, push the theme, and the "MK" initials are replaced.
 - The Reminder app (com.tcl.notereminder) is switched back on by TCL's own startup code after a restart. Its tile stays hidden anyway.
 
+## Lumen (28 October 2026)
+- The launcher is now **Lumen**, app ID `com.mkdziner.tvhome` (code in `lumen/`, on GitHub as MinatoXmohith/lumen).
+  It replaced `com.gathin.tvhome`; everything below that names `com.gathin.tvhome` or `cleanyourtv/` now means
+  `com.mkdziner.tvhome` and `lumen/`.
+- Theme, wallpapers and the TMDB key live in `/sdcard/Android/data/com.mkdziner.tvhome/files/`.
+- Music access: `cmd notification disallow_listener com.mkdziner.tvhome/com.mkdziner.tvhome.MediaListener` revokes it.
+- To uninstall Lumen: TV Settings → Apps → Lumen → Uninstall, after enabling the stock home first (see "Undo everything").
+
 ## Wallpapers by mood (28 October 2026)
 - Launcher settings → Wallpapers. "My theme wallpaper" goes back to the theme's `wallpaper.jpg`.
 - Your wallpapers live on the TV in `/sdcard/Android/data/com.gathin.tvhome/files/wallpapers/`. To remove them,
