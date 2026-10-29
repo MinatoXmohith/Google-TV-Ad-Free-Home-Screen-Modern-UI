@@ -1,5 +1,11 @@
 # Changelog
 
+## v8: Lumen 3.1, steadier and smoother (29 October 2026)
+- Trending (Down on Home) is switched off for now: it froze the TV on some opens.
+- Live wallpapers fade and move with the screen (no black flash or tearing), keep playing in All apps, and only one
+  video decoder is ever in use.
+- Wallpaper and glass blur are decoded once, so screens open faster; the return to Home is a lighter fade and rise.
+
 ## v7: Lumen (28 October 2026)
 - The launcher becomes its own app: **Lumen**, app ID `com.mkdziner.tvhome`, version 3.0, with its own icon and TV banner.
 - Its own repository, [MinatoXmohith/lumen](https://github.com/MinatoXmohith/lumen), MIT with Gathin credited.

@@ -35,7 +35,7 @@ inspired by Apple's tvOS 2026 and built as a native Android TV launcher.
 
 > **Built on [CleanYourTV](https://github.com/Gathin23/cleanyourtv) by Gathin ([@gathint](https://x.com/gathint) · [GitHub](https://github.com/Gathin23)).**
 > The debloat tools, restore system and original launcher are his open-source work (MIT); this project adds the
-> dashboard, liquid glass UI, weather, music and trending screens on top.
+> dashboard, liquid glass UI, weather and music on top. (Trending is switched off for now, in Lumen 3.1.)
 
 ## Features
 
@@ -47,8 +47,7 @@ inspired by Apple's tvOS 2026 and built as a native Android TV launcher.
 | 🎵 **Now playing** | Shows whatever is playing (Spotify, YouTube Music…) with album art and controls. Remote media keys work too. |
 | 🌤 **Weather** | Live from [Open-Meteo](https://open-meteo.com) (free, no account): temperature, condition, day / night, feels like, UV index, wind and cloud cover. |
 | 📱 **Favourite apps** | Five favourite apps on the home screen; the **APPS** tab opens the full grid. |
-| 🎬 **Trending this week** | Press **Down** on the home screen and a page slides up with this week's trending titles from [TMDB](https://www.themoviedb.org), grouped into genre stacks. Select one to search it on the TV. |
-| 🖼 **Wallpapers by mood** | Launcher settings → Wallpapers: five **static** and five **live** (animated) wallpapers, each tagged with a mood. Live ones are muted video loops that stop the moment an app opens, so the app always gets the TV's video decoder. |
+| 🖼 **Wallpapers by mood** | Launcher settings → Wallpapers: five **static** and five **live** (animated) wallpapers, each tagged with a mood. Live ones are muted video loops that keep playing in All apps and stop the moment an app opens, so the app always gets the TV's video decoder. |
 | 🌊 **Smooth motion** | One set of motion curves everywhere, spring physics for focus, menus that fade out, and launcher animations that keep their designed speed even with the system at 0.5×. |
 | ⚡ **Faster TV** | System animations at 0.5× and the main apps pre-compiled. |
 | ↩️ **Fully reversible** | A backup comes first, and one command restores the stock TV. |
@@ -57,12 +56,12 @@ inspired by Apple's tvOS 2026 and built as a native Android TV launcher.
 
 | | |
 |---|---|
-| ![Home](docs/screenshots/home.jpg) | ![Trending this week](docs/screenshots/trending.jpg) |
-| **Home:** greeting, HOME · APPS tabs, now playing, weather with details, five favourite apps | **Trending (press Down):** this week's titles by genre from TMDB, plus a glass music bar |
+| ![Home](docs/screenshots/home.jpg) | ![Home with a live wallpaper](docs/screenshots/home-live-wallpaper.jpg) |
+| **Home:** greeting, HOME · APPS tabs, now playing, weather with details, five favourite apps | **Live wallpaper on Home:** the video plays behind the glass, which shows the motion through it |
 | ![Control panel](docs/screenshots/control-panel.jpg) | ![All apps](docs/screenshots/all-apps.jpg) |
 | **Control panel:** the time pill opens Inputs, Wi-Fi, Settings and launcher settings | **All apps:** the APPS tab; it grows in from the tab and shrinks back on Home |
-| ![Wallpapers by mood](docs/screenshots/wallpapers.jpg) | ![Home with a live wallpaper](docs/screenshots/home-live-wallpaper.jpg) |
-| **Wallpapers:** pick by mood, Static or Live; your pick previews behind the cards | **Live wallpaper on Home:** the video plays behind the glass, which shows the motion through it |
+| ![Wallpapers by mood](docs/screenshots/wallpapers.jpg) | |
+| **Wallpapers:** pick by mood, Static or Live; your pick previews behind the cards | |
 
 ### Design journey
 
