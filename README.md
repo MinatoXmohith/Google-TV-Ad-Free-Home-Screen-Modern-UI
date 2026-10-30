@@ -1,4 +1,8 @@
 <p align="center">
+  <b>Customized your TV? Share it and tag <a href="https://www.instagram.com/mk_dziner/">@mk_dziner</a> on Instagram!</b>
+</p>
+
+<p align="center">
   <img src="docs/banner.png" alt="Google TV — Ad-Free Home Screen & Modern UI" width="820">
 </p>
 

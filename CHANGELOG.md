@@ -1,5 +1,11 @@
 # Changelog
 
+## v9: Lumen 3.2 (30 October 2026)
+- Continue watching row in All apps, built on the TV from what video apps announce while playing.
+- Hold OK on any app to move it or change favourites. Home and All apps now share one order.
+- Remote buttons: press a button and choose what it does, from Launcher settings.
+- APPS transition rebuilt: the wallpaper stays still and only the content changes.
+
 ## v8: Lumen 3.1, steadier and smoother (29 October 2026)
 - Trending (Down on Home) is switched off for now: it froze the TV on some opens.
 - Live wallpapers fade and move with the screen (no black flash or tearing), keep playing in All apps, and only one
